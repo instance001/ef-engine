@@ -1,0 +1,14 @@
+[package]
+name = "ef-engine"
+version = "0.1.0"
+edition = "2024"
+description = "Tiny Entropy Folding core for failure-aware routing and constraint metabolization."
+license = "AGPL-3.0-or-later"
+
+[lib]
+name = "ef_engine"
+path = "src/lib.rs"
+
+[dependencies]
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"

@@ -1,0 +1,127 @@
+{
+  "save_version": 1,
+  "host_id": "minimal_failure_host",
+  "notes": [
+    "Single failure cluster metabolized into one constraint."
+  ],
+  "state": {
+    "attempts": [
+      {
+        "attempt_id": "attempt-a",
+        "method": "direct_patch",
+        "summary": "Tried the direct patch route against the target surface.",
+        "outcome": "Stuck",
+        "failure_class": "surface_gap",
+        "lock_signals": [
+          "missing_patch_surface"
+        ],
+        "retry_delta": {
+          "changed_method": true,
+          "changed_summary": true,
+          "changed_lock_signals": true
+        }
+      },
+      {
+        "attempt_id": "attempt-b",
+        "method": "smaller_decomposition",
+        "summary": "Retried with a smaller decomposition and the same target.",
+        "outcome": "Failed",
+        "failure_class": "surface_gap",
+        "lock_signals": [
+          "missing_patch_surface"
+        ],
+        "retry_delta": {
+          "from_attempt_id": "attempt-a",
+          "changed_method": true,
+          "changed_summary": true,
+          "changed_lock_signals": false
+        }
+      },
+      {
+        "attempt_id": "attempt-c",
+        "method": "alternate_direct_patch",
+        "summary": "Tried a renamed direct route against the same missing surface.",
+        "outcome": "Failed",
+        "failure_class": "surface_gap",
+        "lock_signals": [
+          "missing_patch_surface"
+        ],
+        "retry_delta": {
+          "changed_method": true,
+          "changed_summary": true,
+          "changed_lock_signals": true
+        }
+      }
+    ],
+    "vault": [
+      {
+        "vault_id": "vault-1",
+        "source_attempt_ids": [
+          "attempt-a",
+          "attempt-b"
+        ],
+        "failure_class": "surface_gap",
+        "lock_signals": [
+          "missing_patch_surface"
+        ],
+        "status": "Metabolized"
+      }
+    ],
+    "constraints": [
+      {
+        "constraint_id": "constraint-1",
+        "source_vault_id": "vault-1",
+        "failure_class": "surface_gap",
+        "forbidden_pattern": "missing_patch_surface",
+        "replacement_guidance": "Avoid direct patch routes when the target surface does not exist yet.",
+        "lock_signals": [
+          "missing_patch_surface"
+        ]
+      }
+    ],
+    "triangulation_sessions": [
+      {
+        "triangulation_id": "triangulation-1",
+        "compared_attempt_ids": [
+          "attempt-a",
+          "attempt-b"
+        ],
+        "shared_lock_point": "missing_patch_surface",
+        "failure_class": "surface_gap"
+      }
+    ],
+    "route_log": [
+      {
+        "attempt_id": "attempt-a",
+        "allowed": true,
+        "blocked_by_constraint_ids": [],
+        "rationale": []
+      },
+      {
+        "attempt_id": "attempt-b",
+        "allowed": true,
+        "blocked_by_constraint_ids": [],
+        "rationale": []
+      },
+      {
+        "attempt_id": "attempt-c",
+        "allowed": false,
+        "blocked_by_constraint_ids": [
+          "constraint-1"
+        ],
+        "rationale": [
+          "Constraint 'constraint-1' blocks failure class 'surface_gap' with forbidden pattern 'missing_patch_surface'."
+        ]
+      }
+    ],
+    "log": [
+      "Attempt 'attempt-a' used method 'direct_patch'.",
+      "Failure vaulted as 'vault-1'.",
+      "Attempt 'attempt-b' used method 'smaller_decomposition'.",
+      "Failure vaulted as 'vault-1'.",
+      "Vault 'vault-1' metabolized into constraint 'constraint-1'.",
+      "Attempt 'attempt-c' used method 'alternate_direct_patch'.",
+      "Attempt 'attempt-c' is blocked by metabolized constraints."
+    ]
+  }
+}
