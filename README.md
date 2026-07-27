@@ -14,6 +14,28 @@ The mechanism is simple:
 
 That is the whole idea.
 
+## Failure-to-Constraint Loop
+
+```mermaid
+flowchart LR
+    attempt["Bounded attempt<br/>try one clear move"] --> outcome{"Outcome"}
+    outcome -->|Succeeded| success["No vault needed<br/>route log records clean pass"]
+    outcome -->|Failed or stuck| vault["Vault failure<br/>preserve failure class + lock signals"]
+    vault --> retry["Retry differently<br/>record the delta from the prior attempt"]
+    retry --> compare["Triangulate<br/>find the shared lock point"]
+    compare --> constraint["Metabolize constraint<br/>store forbidden pattern + replacement guidance"]
+    constraint --> route["Future routing<br/>block repeated failure shapes"]
+    route --> attempt
+
+    classDef action fill:#eef7f2,stroke:#25624f,color:#14231d;
+    classDef failure fill:#fff8ec,stroke:#9b5b2e,color:#2a1b10;
+    classDef decision fill:#f3f0ea,stroke:#777,color:#333;
+
+    class attempt,success,retry,route action;
+    class vault,compare,constraint failure;
+    class outcome decision;
+```
+
 ## What Entropy Folding Means Here
 
 In this repo, `entropy` means unresolved search disorder:
