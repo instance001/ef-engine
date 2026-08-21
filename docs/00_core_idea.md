@@ -18,6 +18,10 @@ structure, and `metabolization` means promoting an evidenced failure into a
 constraint. They are not claims about thermodynamics, biology, cognition, or
 sentience.
 
+Because those constraints persist in host state and affect later routing, the
+system learns in an operational sense. It does not imply model self-training,
+hidden cognitive growth, consciousness, or personhood.
+
 ## Mental Model
 
 - attempts are bounded moves

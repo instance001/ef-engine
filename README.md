@@ -8,6 +8,10 @@ disorder, failure-to-constraint conversion, and routing improvement. They are
 not claims about thermodynamics, biology, cognition, sentience, or magical
 insight.
 
+In this operational sense, the system learns: accumulated failure evidence can
+change future routing behavior through explicit host-state constraints. This is
+not model self-learning, hidden training, consciousness, or personhood.
+
 The mechanism is simple:
 
 - make a bounded attempt

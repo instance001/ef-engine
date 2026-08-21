@@ -64,3 +64,11 @@ global improvement.
 
 The practical future effect of a metabolized constraint on what the engine
 should or should not try next.
+
+## System Learns
+
+Operational shorthand for host-state adaptation: accumulated failure evidence
+is metabolized into constraints that change future routing behavior.
+
+It is not a claim that the model self-trains, becomes conscious, develops
+personhood, or learns invisibly outside the explicit saved state.

@@ -13,6 +13,11 @@ behavior. `Entropy`, `folding`, and `metabolization` are engineering metaphors
 for failed-search evidence, constraint formation, and future routing; they are
 not thermodynamic, biological, cognitive, or sentience claims.
 
+In this bounded host-state sense, it is accurate to say the system learns: the
+engine preserves accumulated failure evidence and uses metabolized constraints
+to change future behavior. That phrase does not mean the model is self-training,
+conscious, or developing personhood.
+
 The engine encounters disorder, ambiguity, failed motion, and branching
 possibility space.
 It then folds that entropy into a more structured form:
