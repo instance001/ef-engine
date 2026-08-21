@@ -16,6 +16,10 @@ incremental improvement.
 
 This accelerating pattern is referred to here as the `Eureka Cascade Effect`.
 
+`Eureka` names the observable routing acceleration after evidenced constraints
+are formed. It is not a claim of sudden insight, consciousness, or guaranteed
+global correctness.
+
 Within Entropy Folding, this is what happens when one fold reorganizes more of
 the search space than the original failure alone would suggest.
 

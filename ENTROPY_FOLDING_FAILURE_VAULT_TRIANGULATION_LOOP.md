@@ -8,6 +8,11 @@ Engine`) is being built around while the architectural context is still fresh.
 `Entropy Folding` is not only a name.
 It is the theory of motion underneath the engine.
 
+In this implementation repo, that theory language is bounded to search-routing
+behavior. `Entropy`, `folding`, and `metabolization` are engineering metaphors
+for failed-search evidence, constraint formation, and future routing; they are
+not thermodynamic, biological, cognitive, or sentience claims.
+
 The engine encounters disorder, ambiguity, failed motion, and branching
 possibility space.
 It then folds that entropy into a more structured form:

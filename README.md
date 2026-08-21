@@ -2,6 +2,12 @@
 
 `EF Engine` is a tiny `Entropy Folding` core for failure-aware routing.
 
+Terminology boundary: in this repository, `entropy`, `folding`,
+`metabolization`, and `Eureka Cascade` are local framework terms for search
+disorder, failure-to-constraint conversion, and routing improvement. They are
+not claims about thermodynamics, biology, cognition, sentience, or magical
+insight.
+
 The mechanism is simple:
 
 - make a bounded attempt

@@ -8,6 +8,9 @@ Unresolved search disorder:
 - too much ambiguity
 - too many repeated bad routes
 
+In this repo, `entropy` is a search-routing term. It is not a thermodynamic
+claim.
+
 ## Folding
 
 The act of converting unresolved disorder into usable structure for future
@@ -41,6 +44,9 @@ The exact structural blocker behind one or more visible failures.
 
 The conversion of a triangulated failure into durable negative knowledge.
 
+This is an engineering metaphor for promoting an evidenced failure pattern into
+a reusable constraint. It is not a biological or cognitive claim.
+
 ## Constraint
 
 A reusable boundary that blocks known bad future routes under defined
@@ -50,6 +56,9 @@ conditions.
 
 The accelerated effect where one metabolized lesson blocks multiple related
 future failures.
+
+The term describes a routing effect, not sudden magical insight or guaranteed
+global improvement.
 
 ## Routing Consequence
 

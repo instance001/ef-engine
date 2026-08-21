@@ -12,6 +12,12 @@
 
 That is the whole mechanism.
 
+These terms are local engineering metaphors. `Entropy` means unresolved search
+disorder, `folding` means converting that disorder into usable routing
+structure, and `metabolization` means promoting an evidenced failure into a
+constraint. They are not claims about thermodynamics, biology, cognition, or
+sentience.
+
 ## Mental Model
 
 - attempts are bounded moves
