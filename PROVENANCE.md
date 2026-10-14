@@ -32,3 +32,7 @@ GitHub API licence field at inventory time: `AGPL-3.0`. This is a metadata obser
 ## Evidence and limitations
 
 Evidence: authenticated GitHub API metadata captured by the FMI provenance audit. Contribution, prior art, ownership, contributors, document licensing, relationships, releases, and publication status require human verification.
+
+## Evidence-led lineage position
+
+`README.md` documents EF Engine as a Rust specimen of a failure-to-constraint loop: bounded attempt, truthful failure/stuckness record, vaulting, different retry, shared-lock triangulation, and future-routing constraint promotion. It is an `IMPLEMENTED` specimen of that documented combination. It does not claim that entropy, thermodynamics, learning, retries, failure logging, or constraints are novel or owned by FMI. The related hypothesis and signal-atlas repositories provide a proposed framework and candidate-trace record respectively; they are not evidence that the mechanism is externally validated.
